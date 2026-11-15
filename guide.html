@@ -1,0 +1,94 @@
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>レポートの読み方ガイド</title>
+<style>
+:root{--bg:#FBFBF9;--fg:#1D2126;--mut:#6B7280;--card:#FFF;--line:#EEEFEA;--h2line:#A8BBD2;
+--blue:#2F6FB5;--org:#C9762A;--grn:#3F8B54;--bad:#C0392B;--good:#2E7D4F;--bar:#5B8DC8;--bar2:#B9CEE6}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#14181C;--fg:#E6E9EC;--mut:#9AA4AE;--card:#1B2126;--line:#2A3037;--h2line:#4A657F;--bar:#4A79AE;--bar2:#2E4661;--good:#5FBF87;--bad:#E4756A}}
+:root[data-theme=dark]{--bg:#14181C;--fg:#E6E9EC;--mut:#9AA4AE;--card:#1B2126;--line:#2A3037;--h2line:#4A657F;--bar:#4A79AE;--bar2:#2E4661;--good:#5FBF87;--bad:#E4756A}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-size:13.5px;line-height:1.75;
+font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:26px 18px 70px}
+h1{font-size:1.6rem;margin:0 0 .3em;line-height:1.35}
+h2{font-size:1.08rem;margin:2.2em 0 .8em;padding-bottom:.4em;border-bottom:2px solid var(--h2line)}
+h3{font-size:.95rem;margin:1.5em 0 .5em}
+.sub{color:var(--mut);font-size:.82rem;margin-bottom:1.6em}
+.b{display:inline-block;padding:.3em .65em;font-size:.7rem;font-weight:700;border-radius:99px;color:#fff;
+vertical-align:baseline;position:relative;top:-.1em;margin:0 .55rem;white-space:nowrap;line-height:1}
+.br{background:var(--blue)}.bp{background:var(--org)}.ba{background:var(--grn)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.kpi .lab{font-size:.76rem;color:var(--mut);display:block;margin-bottom:.15em}
+.kpi .val{font-size:1.45rem;font-weight:800;letter-spacing:-.01em}
+.kpi .cmp{font-size:.76rem;color:var(--mut)}
+.good{color:var(--good);font-weight:700}.bad{color:var(--bad);font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin:.5em 0}
+th,td{padding:.5em .5em;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th{color:var(--mut);font-weight:600;font-size:.75rem;text-align:right}
+td.nm,th.nm{text-align:left;white-space:nowrap;min-width:150px}
+small{font-size:.88em;color:var(--mut)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.fr{display:flex;align-items:center;gap:12px;margin:12px 0}
+.fl{width:52px;font-weight:800;font-size:.95rem;flex:none}
+.fb{flex:1;min-width:0;background:var(--bar2);border-radius:7px;overflow:hidden}
+.fbar{height:44px;background:var(--bar);color:#fff;font-weight:800;font-size:1rem;display:flex;align-items:center;
+justify-content:flex-end;padding-right:12px;border-radius:7px;min-width:44px}
+.fs{width:104px;flex:none;font-size:.78rem;color:var(--mut);text-align:left}
+.tag{display:inline-block;margin-left:.45em;padding:.15em .5em;border-radius:5px;font-size:.68rem;font-weight:700;color:#fff}
+.t1{background:#B5651D}.t2{background:#9E3B36}
+ul{padding-left:1.2em;margin:.4em 0}li{margin:.3em 0}
+.note{font-size:.8rem;color:var(--mut)}
+.pri{display:inline-block;background:var(--blue);color:#fff;border-radius:5px;padding:.1em .5em;font-size:.7rem;font-weight:700;margin-right:.5em}
+footer{margin-top:3em;padding-top:1em;border-top:1px solid var(--line);font-size:.76rem;color:var(--mut)}
+a{color:var(--blue)}
+.gl{display:block;text-align:center;background:var(--card);border:1px solid var(--h2line);border-radius:10px;
+padding:14px;margin-top:2em;font-weight:700;text-decoration:none}
+</style>
+<div class="wrap">
+<h1>📖 レポートの読み方ガイド</h1>
+<div class="sub">CS面談 数値レポートを作るときに意識している8つのポイント（チーム共有用）｜対象レポート 2026/11/1–11/15</div>
+<div class="card"><p>数字は「誰が悪いか」を決めるためではなく、<b>どこに手を打てば一番効くかを見つけるため</b>に見ています。以下は、レポートを作るときと読むときの共通ルールです。</p></div>
+
+<h2>① 基準を必ず区別する</h2>
+<div class="card"><p>同じ「実施率」でも、どの日付を軸に数えたかで意味が変わります。レポートでは全ての数字に<span class="b br">【結果】</span><span class="b bp">【予定日】</span><span class="b ba">【申込日】</span>のバッジを付けています。</p>
+<ul><li><span class="b br">【結果】</span>その期間に起きた件数。活動量・売上を見る。</li>
+<li><span class="b bp">【予定日】</span>予約した人を追跡。率の良し悪し判定はこれが主。</li>
+<li><span class="b ba">【申込日】</span>申込んだ人を追跡。集客の歩留まりを見る。</li></ul>
+<p><b>禁止事項：基準をまたいだ割り算。</b>「実施日の件数 ÷ 申込日の件数」のような計算は、分子と分母が別の集団になるため意味を持ちません。過去にこれでショート動画が誤って「低実施率」に見えた事故がありました。</p></div>
+
+<h2>② 直近の数字は「暫定」</h2>
+<div class="card"><p>予定日が来たばかりの面談は、まだ実施もキャンセルもされていない「保留」として分母に残ります。成約も面談から数日遅れて発生します。そのため<b>直近をそのまま集計すると必ず低く出ます</b>。</p>
+<p>対策として、率のヘッドラインは<b>データ基準日の2〜3日手前で締めた確定値</b>を使い、期間フルの値は「暫定」と明記して併記しています。低い数字を見たら、まず「本当に落ちたのか、まだ確定していないだけか」を切り分けてください。</p></div>
+
+<h2>③ 比較は同じ条件で</h2>
+<div class="card"><ul>
+<li><b>先週比：</b>同じ日数のまま7日前へずらす（8/1–8/19 ↔ 7/25–8/12）。</li>
+<li><b>先月比：</b>前月の同じ日まで（8/1–8/19 ↔ 7/1–7/19）。月末までのフル月と月途中を比べない。</li>
+<li><b>同じ時点での前月比（実施率・申込数分母）：</b>前月の値は未決着がほぼ無くなった「最終値」なので、今月の途中経過とそのまま比べると今月が低く見える。前月の申込を<b>今月と同じ経過日数の時点</b>で見た値（例：前月（最終値）69.1%／同じ時点 67.6%）を並べ、増減は同じ時点どうしで読む。</li>
+<li><b>未決着の数え方：</b>未予約＝予定日・実施日・キャンセル日がすべて空、面談待ち＝予定日ありで実施・キャンセルなし（CS Hubの「面談待ち」と同じ）。予約前のキャンセルは決着済み。</li>
+<li><b>週次：</b>日曜始まりの完全な11日間だけを使う。</li>
+<li><b>差の書き方：</b>件数は%、率はpt（パーセントポイント）、LTは日数差。混ぜない。</li>
+</ul></div>
+
+<h2>④ 平均を分解する</h2>
+<div class="card"><p>全体平均が動いたときは、必ず<b>プロジェクト別・メンバー別に割って原因を特定</b>します。全体で1pt下がっていても、中身は「1つのPJが10pt落ちて、他は横ばい」ということがよくあります。</p>
+<p><b>ただし母数の小さい相手を率で評価しない。</b>実施3件で成約0件は「成約率0%」ですが、これは実力の情報をほとんど含みません。レポートでは<b>PJは予約10件未満、メンバーは実施15件未満を率の判定対象外</b>にしています。</p></div>
+
+<h2>⑤ 率と量の両方を見る</h2>
+<div class="card"><p>率が悪くても量が小さければ全体への影響は軽微です。逆に率が平均並みでも量が大きければ改善インパクトは最大になります。<b>優先順位は「率の悪さ × 量」で決めます。</b></p>
+<p>例：成約率15.4%のメンバーでも実施65件なら、25%に戻すだけで月+6件。成約率0%でも実施6件なら影響は限定的です。</p></div>
+
+<h2>⑥ メンバー評価は母数と継続性で</h2>
+<div class="card"><p>1ヶ月の数字だけで人の良し悪しは判断しません。目安は<b>2ヶ月以上連続・母数15件以上・15%未満</b>。この条件に当てはまって初めて「継続的に低い」と扱い、それでも<b>まず同席レビューで原因を確かめてから</b>次を考えます。</p>
+<p><b>数字はケアの優先順位を決める道具であって、評価を下すための道具ではありません。</b>急落した人は不調のサインなので、責める前に状況を聞くのが先です。</p></div>
+
+<h2>⑦ リードタイムは原因の切り分け装置</h2>
+<div class="card"><p>LT（申込→実施、実施→成約にかかった日数）は、それ自体が目標ではなく<b>仮説を潰すための道具</b>です。</p>
+<p>例：成約率が落ちたとき「面談までが遠くて熱が冷めたのでは？」という仮説が出ます。ここでLTが短くなっていれば、その仮説は否定でき、<b>原因は面談の中身に絞り込めます</b>。今月がまさにこのケースでした。</p></div>
+
+<h2>⑧ 全ての対策に効果測定指標をセットする</h2>
+<div class="card"><p>対策を出したら必ず「<b>どの基準の・どの指標を・いつ見れば効果が分かるか</b>」を一緒に書きます。これがないと、やりっぱなしになり、翌月に同じ議論を繰り返すことになります。</p>
+<p>例：「ミニFCの提案見直し」→ 効果測定は<span class="b bp">【予定日】</span>のPJ別成約率、目標は前月水準の15%復帰。</p></div>
+
+<a class="gl" href="./index.html">← レポート本体に戻る</a>
+<footer>CS面談 数値レポート 付属ガイド｜このページはレポート本体と同じ集計ルールに基づいています。</footer>
+</div>

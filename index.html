@@ -1,0 +1,152 @@
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>CS面談 数値レポート 2026年11月（11/1–11/15）</title>
+<style>
+:root{--bg:#FBFBF9;--fg:#1D2126;--mut:#6B7280;--card:#FFF;--line:#EEEFEA;--h2line:#A8BBD2;
+--blue:#2F6FB5;--org:#C9762A;--grn:#3F8B54;--bad:#C0392B;--good:#2E7D4F;--bar:#5B8DC8;--bar2:#B9CEE6}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#14181C;--fg:#E6E9EC;--mut:#9AA4AE;--card:#1B2126;--line:#2A3037;--h2line:#4A657F;--bar:#4A79AE;--bar2:#2E4661;--good:#5FBF87;--bad:#E4756A}}
+:root[data-theme=dark]{--bg:#14181C;--fg:#E6E9EC;--mut:#9AA4AE;--card:#1B2126;--line:#2A3037;--h2line:#4A657F;--bar:#4A79AE;--bar2:#2E4661;--good:#5FBF87;--bad:#E4756A}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-size:13.5px;line-height:1.75;
+font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:26px 18px 70px}
+h1{font-size:1.6rem;margin:0 0 .3em;line-height:1.35}
+h2{font-size:1.08rem;margin:2.2em 0 .8em;padding-bottom:.4em;border-bottom:2px solid var(--h2line)}
+h3{font-size:.95rem;margin:1.5em 0 .5em}
+.sub{color:var(--mut);font-size:.82rem;margin-bottom:1.6em}
+.b{display:inline-block;padding:.3em .65em;font-size:.7rem;font-weight:700;border-radius:99px;color:#fff;
+vertical-align:baseline;position:relative;top:-.1em;margin:0 .55rem;white-space:nowrap;line-height:1}
+.br{background:var(--blue)}.bp{background:var(--org)}.ba{background:var(--grn)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.kpi .lab{font-size:.76rem;color:var(--mut);display:block;margin-bottom:.15em}
+.kpi .val{font-size:1.45rem;font-weight:800;letter-spacing:-.01em}
+.kpi .cmp{font-size:.76rem;color:var(--mut)}
+.good{color:var(--good);font-weight:700}.bad{color:var(--bad);font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin:.5em 0}
+th,td{padding:.5em .5em;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th{color:var(--mut);font-weight:600;font-size:.75rem;text-align:right}
+td.nm,th.nm{text-align:left;white-space:normal;min-width:150px}
+small{font-size:.88em;color:var(--mut)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.fr{display:flex;align-items:center;gap:12px;margin:12px 0}
+.fl{width:52px;font-weight:800;font-size:.95rem;flex:none}
+.fb{flex:1;min-width:0;background:var(--bar2);border-radius:7px;overflow:hidden}
+.fbar{height:44px;background:var(--bar);color:#fff;font-weight:800;font-size:1rem;display:flex;align-items:center;
+justify-content:flex-end;padding-right:12px;border-radius:7px;min-width:44px}
+.fs{width:104px;flex:none;font-size:.78rem;color:var(--mut);text-align:left}
+.tag{display:inline-block;margin-left:.45em;padding:.15em .5em;border-radius:5px;font-size:.68rem;font-weight:700;color:#fff}
+.t1{background:#B5651D}.t2{background:#9E3B36}
+ul{padding-left:1.2em;margin:.4em 0}li{margin:.3em 0}
+.note{font-size:.8rem;color:var(--mut)}
+.pri{display:inline-block;background:var(--blue);color:#fff;border-radius:5px;padding:.1em .5em;font-size:.7rem;font-weight:700;margin-right:.5em}
+footer{margin-top:3em;padding-top:1em;border-top:1px solid var(--line);font-size:.76rem;color:var(--mut)}
+a{color:var(--blue)}
+.gl{display:block;text-align:center;background:var(--card);border:1px solid var(--h2line);border-radius:10px;
+padding:14px;margin-top:2em;font-weight:700;text-decoration:none}
+
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 16px;margin:10px 0}
+summary{cursor:pointer;font-weight:700;font-size:.92rem}
+.lead{background:var(--card);border:2px solid var(--h2line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.lead ol{padding-left:1.3em;margin:.3em 0}.lead li{margin:.45em 0}
+.tag{margin:.15em .25em .15em 0}
+.tw1{background:#2E5AA8}   /* 実施率が平均未満＝青 */
+.tw2{background:#6A3F99}   /* キャンセル率が平均超＝紫 */
+.tw3{background:#2A6E77}   /* 成約率<25%＝藍緑 */
+.tg{background:#6B7280}    /* 母数不足＝グレー（注意ではなく評価対象外） */
+td.tags{min-width:130px;white-space:normal;line-height:1.5}
+</style>
+<div class="wrap">
+<h1>CS面談 数値レポート — 2026年11月（11/1–11/15）</h1>
+<div class="sub">対象 2026/11/1–11/15（15日間）｜比較は前月同日 10/1–10/15｜データ基準日 2026/11/15｜15プロジェクト｜<b>主指標＝申込数分母</b>（実施÷申込・キャンセル÷申込）<span class="b ba">【申込日】</span>、予約数分母<span class="b bp">【予定日】</span>は従</div>
+
+<div class="lead"><b>🧭 結論（ここだけで判断できます）</b>
+<ol>
+<li><b>集客は前月を上回る。</b>申込 498件（前月同日 455件、<span class="good">+9.5%</span>）<span class="b ba">【申込日】</span>。増えたのは ふるさとプロテュース実践塾（121件・前月同日28件）・ミニフランチャイズ本部構築プログラム（44件・21件）・You Voice Academy（63件・49件）。減ったのは ARTISTORY LABS（83件・125件・<span class="bad">▼33.6%</span>）。</li>
+<li><b>実施率（申込数分母）は同じ時点で <span class="bad">▼5.3pt</span>。</b>確定分（11/1–11/12）59.3%、前月の同じ時点（10/15時点）64.6%<span class="b ba">【申込日】</span>（前回11/11版は▼2.2pt）。キャンセル率は同じ時点で 26.4%／26.6% とほぼ同じで、差の大部分は<b>未決着（面談待ち・未予約）の割合が 14.3%（前月同時点 8.9%）と多い</b>ことによります。実施LT（申込→実施）は 3.5日（前月同日 2.9日）<span class="b bp">【予定日】</span>。</li>
+<li><b>成約率は前月並み。</b><span class="b br">【結果】</span> 28.3%（前月同日 27.7%、<span class="good">+0.6pt</span>）。<span class="b bp">【予定日】</span> 17.8% は成約の入力が遅れて入るため途中経過です。</li>
+<li><b>見ておくところは3つ。</b>① <b>Digital Creators Academy</b>＝キャンセル率（申込数分母）40.4%で申込10件以上のプロジェクトで最大、予約数分母も 43.1%（前月同日 36.7%）<span class="b bp">【予定日】</span> ② <b>ふるさとプロテュース実践塾</b>＝実施114件（最多）で成約率<span class="b br">【結果】</span> 21.9% ③ <b>ミニフランチャイズ本部構築プログラム</b>＝実施27件で成約2件（7.4%）<span class="b br">【結果】</span>。</li>
+<li><b>良いところ。</b>Coオンラインプロモーションは成約率<span class="b br">【結果】</span> 57.7%（実施26件で成約15件）、You Voice Academy は 38.6%（実施44件で成約17件）でキャンセル率（予約数分母）も 29.4%（前月同日 42.5%）<span class="b bp">【予定日】</span> に下がった。</li>
+</ol>
+<div class="note">⚠️ 申込数分母は月途中では低く出ます。今月は申込498件のうち<b>119件（23.9%）が未決着</b>（未予約24件＋面談待ち95件。未予約＝予定日・実施日・キャンセル日がすべて空、面談待ち＝予定日ありで実施・キャンセルなし＝CS Hubと同じ）。全部実施されれば最大75.7%まで上がるため、前月比は<b>確定分どうし・同じ時点どうし</b>で見てください（確定分にも未決着60件＝未予約7・面談待ち53が残り、最大73.6%）。</div>
+</div>
+
+<h2>主要数値</h2>
+<div class="grid">
+<div class="card kpi"><span class="lab">申込件数 <span class="b ba">【申込日】</span></span><span class="val">498</span>
+<span class="cmp">前月同日 455 → <span class="good">+9.5%</span></span></div>
+<div class="card kpi"><span class="lab">★実施率（申込数分母）<span class="b ba">【申込日】</span></span><span class="val">51.8%</span>
+<span class="cmp">確定分 11/1–11/12 59.3%<br>前月（最終値）71.7%／同じ時点（10/15時点）64.6% → <span class="bad">▼5.3pt</span><br>前月フル 73.0%</span></div>
+<div class="card kpi"><span class="lab">★キャンセル率（申込数分母）<span class="b ba">【申込日】</span></span><span class="val">24.3%</span>
+<span class="cmp">前月同日の最終値 27.5%（同じ時点で比べると 確定分 26.4%／前月同時点 26.6% → <span class="good">▼0.1pt</span>）<br>下がるほど良い</span></div>
+<div class="card kpi"><span class="lab">成約率 <span class="b br">【結果】</span></span><span class="val">28.3%</span>
+<span class="cmp">前月同日 27.7% → <span class="good">+0.6pt</span><br><span class="b bp">【予定日】</span>17.8%（途中経過）</span></div>
+</div>
+<p class="note"><b>申込498件の行き先：</b>実施 258件（51.8%）／キャンセル 121件（24.3%）／面談待ち 95件／未予約 24件（未決着 計119件）。　
+<b>従・予約数分母<span class="b bp">【予定日】</span>：</b>実施率 70.7%（前月同日 74.3%、<span class="bad">▼3.5pt</span>）／キャンセル率 25.5%（前月同日 25.7%、<span class="good">▼0.2pt</span>）。直近1週（11/8–11/14）は実施率 69.9%でその前の週（11/1–11/7）77.8%から<span class="bad">▼7.9pt</span>。</p>
+
+<h2>プロジェクト別（主＝申込数分母）<span class="b ba">【申込日】</span></h2>
+<div class="scroll"><table>
+<tr><th class="nm">プロジェクト</th><th>申込</th><th>★実施率<br><small>申込数分母</small></th><th>★ｷｬﾝｾﾙ率<br><small>申込数分母</small></th><th>成約<span class="b br">【結果】</span></th><th>成約率<span class="b br">【結果】</span></th><th><small>従：実施率/ｷｬﾝｾﾙ率<br>予約数分母<span class="b bp">【予定日】</span></small></th><th class="nm">注意点</th></tr>
+<tr><td class='nm'>ふるさとプロテュース実践塾</td><td>121<small> <span class="good">+332.1%</span></small></td><td><b>58.7%</b><small> <span class="bad">▼16.3pt</span></small></td><td><b>21.5%</b><small> <span class="good">▼3.5pt</span></small></td><td>25</td><td>21.9%<small> <span class="good">+2.1pt</span></small></td><td><small>74.0% / 23.4%</small></td><td class='nm tags'><span class="tag tw3">成約率&lt;25%</span></td></tr><tr><td class='nm'>ARTISTORY LABS</td><td>83<small> <span class="bad">▼33.6%</span></small></td><td><b>51.8%</b><small> <span class="bad">▼27.4pt</span></small></td><td><b>18.1%</b><small> <span class="good">▼2.7pt</span></small></td><td>19</td><td>26.0%<small> <span class="good">+0.5pt</span></small></td><td><small>78.3% / 18.5%</small></td><td class='nm tags'><small>—</small></td></tr><tr><td class='nm'>You Voice Academy</td><td>63<small> <span class="good">+28.6%</span></small></td><td><b>47.6%</b><small> <span class="bad">▼9.5pt</span></small></td><td><b>25.4%</b><small> <span class="good">▼17.5pt</span></small></td><td>17</td><td>38.6%<small> <span class="bad">▼1.1pt</span></small></td><td><small>64.7% / 29.4%</small></td><td class='nm tags'><span class="tag tw1">実施率が平均未満</span><span class="tag tw2">ｷｬﾝｾﾙ率が平均超</span></td></tr><tr><td class='nm'>Digital Creators Academy</td><td>52<small> <span class="bad">▼10.3%</span></small></td><td><b>51.9%</b><small> <span class="bad">▼13.6pt</span></small></td><td><b>40.4%</b><small> <span class="bad">+5.9pt</span></small></td><td>9</td><td>29.0%<small> <span class="good">+1.6pt</span></small></td><td><small>53.4% / 43.1%</small></td><td class='nm tags'><span class="tag tw2">ｷｬﾝｾﾙ率が平均超</span></td></tr><tr><td class='nm'>Coオンラインプロモーション</td><td>51<small> <span class="good">+18.6%</span></small></td><td><b>45.1%</b><small> <span class="bad">▼22.3pt</span></small></td><td><b>25.5%</b><small> <span class="good">▼7.1pt</span></small></td><td>15</td><td>57.7%<small> <span class="good">+23.6pt</span></small></td><td><small>76.5% / 14.7%</small></td><td class='nm tags'><span class="tag tw1">実施率が平均未満</span><span class="tag tw2">ｷｬﾝｾﾙ率が平均超</span></td></tr><tr><td class='nm'>ミニフランチャイズ本部構築プログラム</td><td>44<small> <span class="good">+109.5%</span></small></td><td><b>54.5%</b><small> <span class="bad">▼12.1pt</span></small></td><td><b>22.7%</b><small> <span class="good">▼10.6pt</span></small></td><td>2</td><td>7.4%<small> <span class="bad">▼2.4pt</span></small></td><td><small>65.9% / 31.7%</small></td><td class='nm tags'><span class="tag tw3">成約率&lt;25%</span></td></tr><tr><td class='nm'>THE CREATORS FORCE</td><td>16<small> <span class="good">+77.8%</span></small></td><td><b>56.2%</b><small> <span class="bad">▼10.4pt</span></small></td><td><b>12.5%</b><small> <span class="good">▼20.8pt</span></small></td><td>2</td><td>18.2%<small> <span class="good">+9.1pt</span></small></td><td><small>84.6% / 15.4%</small></td><td class='nm tags'><span class="tag tw3">成約率&lt;25%</span></td></tr><tr><td class='nm'>ソリューションクリエイター実践ラボ</td><td>13<small> <span class="bad">▼48.0%</span></small></td><td><b>46.2%</b><small> <span class="bad">▼49.8pt</span></small></td><td><b>7.7%</b><small> <span class="bad">+3.7pt</span></small></td><td>1</td><td>7.7%<small> <span class="bad">▼25.6pt</span></small></td><td><small>86.7% / 6.7%</small></td><td class='nm tags'><span class="tag tw1">実施率が平均未満</span><span class="tag tw3">成約率&lt;25%</span></td></tr><tr><td class='nm'>LOCAL AMBASSADOR PROJECT</td><td>13<small> <span class="good">+8.3%</span></small></td><td><b>53.8%</b><small> <span class="bad">▼29.5pt</span></small></td><td><b>38.5%</b><small> <span class="bad">+21.8pt</span></small></td><td>1</td><td>14.3%<small> <span class="bad">▼1.5pt</span></small></td><td><small>53.8% / 38.5%</small></td><td class='nm tags'><span class="tag tw2">ｷｬﾝｾﾙ率が平均超</span></td></tr><tr><td class='nm'>ポケットアニメマスタークラス</td><td>11<small> <span class="bad">▼56.0%</span></small></td><td><b>45.5%</b><small> <span class="bad">▼34.5pt</span></small></td><td><b>36.4%</b><small> <span class="bad">+16.4pt</span></small></td><td>7</td><td>87.5%<small> <span class="good">+63.1pt</span></small></td><td><small>66.7% / 33.3%</small></td><td class='nm tags'><span class="tag tw1">実施率が平均未満</span><span class="tag tw2">ｷｬﾝｾﾙ率が平均超</span></td></tr><tr><td class='nm'>ひとり広報アカデミー</td><td>10<small> <span class="bad">▼9.1%</span></small></td><td><b>20.0%</b><small> <span class="bad">▼43.6pt</span></small></td><td><b>30.0%</b><small> <span class="good">▼6.4pt</span></small></td><td>0</td><td>0.0%<small> <span class="bad">▼54.5pt</span></small></td><td><small>28.6% / 57.1%</small></td><td class='nm tags'><span class="tag tw1">実施率が平均未満</span><span class="tag tw2">ｷｬﾝｾﾙ率が平均超</span></td></tr><tr><td class='nm'>サイエンスセールスカレッジ</td><td>8<small> <span class="good">+100.0%</span></small></td><td><b>37.5%</b><small> <span class="bad">▼37.5pt</span></small></td><td><b>37.5%</b><small> <span class="bad">+12.5pt</span></small></td><td>1</td><td>25.0%<small> <span class="bad">▼25.0pt</span></small></td><td><small>66.7% / 33.3%</small></td><td class='nm tags'><span class="tag tg">申込10未満</span></td></tr><tr><td class='nm'>ショート動画ブートキャンプ</td><td>7<small> <span class="good">+0.0%</span></small></td><td><b>71.4%</b><small> <span class="bad">▼14.3pt</span></small></td><td><b>14.3%</b><small> <span class="bad">+0.0pt</span></small></td><td>6</td><td>50.0%<small> <span class="good">+4.5pt</span></small></td><td><small>92.3% / 7.7%</small></td><td class='nm tags'><span class="tag tg">申込10未満</span></td></tr><tr><td class='nm'>Graphic Artist Guild</td><td>4<small> <span class="bad">▼75.0%</span></small></td><td><b>75.0%</b><small> <span class="good">+0.0pt</span></small></td><td><b>0.0%</b><small> <span class="good">▼25.0pt</span></small></td><td>2</td><td>40.0%<small> <span class="good">+5.2pt</span></small></td><td><small>100.0% / 0.0%</small></td><td class='nm tags'><span class="tag tg">申込10未満</span></td></tr><tr><td class='nm'>メイクアップバストスクール</td><td>2<small> <span class="bad">▼75.0%</span></small></td><td><b>0.0%</b><small> <span class="bad">▼37.5pt</span></small></td><td><b>50.0%</b><small> <span class="good">▼12.5pt</span></small></td><td>0</td><td>0.0%<small> <span class="bad">▼40.0pt</span></small></td><td><small>50.0% / 50.0%</small></td><td class='nm tags'><span class="tag tg">申込10未満</span></td></tr>
+</table></div>
+<p class="note">全体平均は実施率（申込数分母）51.8%・キャンセル率（申込数分母）24.3%。小さい数字は前月同日との差（成約率は10月フル比）で、<b>実施率・成約率は下がると赤、キャンセル率は上がると赤</b>。<br>
+<b>注意点の見方：</b><span class="tag tw1">実施率が平均未満</span>＝実施率（申込数分母）が全体平均 51.8% を下回る／<span class="tag tw2">ｷｬﾝｾﾙ率が平均超</span>＝キャンセル率（申込数分母）が全体平均 24.3% を上回る／<span class="tag tw3">成約率&lt;25%</span>＝実施10件以上で成約率<span class="b br">【結果】</span>が25%未満／<span class="tag tg">申込10未満</span>＝母数が小さく率で評価しない（注意点ではありません）。</p>
+
+<details><summary>▼ 見立て（低い/高いプロジェクトの理由）</summary>
+<ul>
+<li><b>Digital Creators Academy</b>（申込52件・キャンセル率 40.4%<span class="b ba">【申込日】</span>）… 予約数分母のキャンセル率は 43.1%<span class="b bp">【予定日】</span>（前回11/11版 40.4%・前月同日 36.7%）で悪化が続く。成約率<span class="b br">【結果】</span> 29.0%は全体並みなので、会えれば決まる。</li>
+<li><b>ふるさとプロテュース実践塾</b>（申込121件<span class="b ba">【申込日】</span>／実施114件・成約25件<span class="b br">【結果】</span>）… 予約数分母の実施率 74.0%<span class="b bp">【予定日】</span>で入口は良好。申込が前月同日の約4倍に増えた中で、成約率は 10月フル 19.8% から 21.9% と同水準。</li>
+<li><b>ミニフランチャイズ本部構築プログラム</b>（申込44件<span class="b ba">【申込日】</span>／実施27件・成約2件<span class="b br">【結果】</span>）… 申込は前月同日の約2倍。成約率は 10月フル 9.8% と同じく低い水準が続く。</li>
+<li><b>LOCAL AMBASSADOR PROJECT・ひとり広報アカデミー</b>（申込13件・10件）… キャンセル率（申込数分母）38.5%／実施率（申込数分母）20.0%。母数がゲートぎりぎりのため、次回も同じなら取り上げます。</li>
+<li><b>ARTISTORY LABS</b>（申込83件・実施率 51.8%<span class="b ba">【申込日】</span>・成約率<span class="b br">【結果】</span> 26.0%）… 率は全体並みで、課題は申込の減少（<span class="bad">▼33.6%</span>）。面談待ち 24件と最も多い。</li>
+<li><b>Coオンラインプロモーション・You Voice Academy</b>… 成約率<span class="b br">【結果】</span>が上位。実施率（申込数分母）は 45.1%・47.6% と平均未満だが、予約数分母では 76.5%・64.7%<span class="b bp">【予定日】</span>。</li>
+</ul></details>
+
+<h2>メンバー別 <span class="b br">【結果】</span></h2>
+<div class="card"><b>好事例</b>（実施15件以上）
+<div class="note">上原 大祐さん 成約率 56.7%（実施30件・10月フル 38.2%）／渡邉 巧巳さん 40.0%（実施15件・10月フル 36.7%）／林 正二さん 28.9%（実施45件・10月フル 19.6%）／柚山 宏和さん 27.3%（実施22件・10月フル 10.0%）。</div></div>
+<div class="card"><b>要ケア</b>（実施15件以上・数字は評価ではなくケアの優先順位）
+<div class="note"><b>橋本 淳志さん</b> 成約率 26.9%（実施52件＝最多・10月フル 44.1%）＝件数が多く全体への影響が最大／<b>角 忠憲さん</b> 23.8%（実施42件・10月フル 34.0%・前回11/11版 29.0%）／<b>澤畠 英里さん</b> 21.1%（実施19件・10月フル 32.7%）。</div></div>
+<details><summary>▼ メンバー別の数字（全員）</summary>
+<div class="scroll"><table>
+<tr><th class="nm">メンバー</th><th>実施</th><th>成約</th><th>成約率</th><th>実施率<span class="b bp">【予定日】</span></th><th><small>10月 成約率（実施数）</small></th></tr>
+<tr><td class='nm'>橋本 淳志</td><td>52</td><td>14</td><td><b>26.9%</b><small> <span class="bad">▼17.2pt</span></small></td><td>77.6%</td><td><small>44.1% (34)</small></td></tr><tr><td class='nm'>林 正二</td><td>45</td><td>13</td><td><b>28.9%</b><small> <span class="good">+9.3pt</span></small></td><td>67.2%</td><td><small>19.6% (97)</small></td></tr><tr><td class='nm'>角 忠憲</td><td>42</td><td>10</td><td><b>23.8%</b><small> <span class="bad">▼10.2pt</span></small></td><td>73.7%</td><td><small>34.0% (53)</small></td></tr><tr><td class='nm'>上原 大祐</td><td>30</td><td>17</td><td><b>56.7%</b><small> <span class="good">+18.5pt</span></small></td><td>78.9%</td><td><small>38.2% (55)</small></td></tr><tr><td class='nm'>柚山 宏和</td><td>22</td><td>6</td><td><b>27.3%</b><small> <span class="good">+17.3pt</span></small></td><td>66.7%</td><td><small>10.0% (30)</small></td></tr><tr><td class='nm'>澤畠 英里</td><td>19</td><td>4</td><td><b>21.1%</b><small> <span class="bad">▼11.7pt</span></small></td><td>73.1%</td><td><small>32.7% (55)</small></td></tr><tr><td class='nm'>鈴木 樹美香</td><td>16</td><td>4</td><td><b>25.0%</b><small> <span class="bad">▼8.3pt</span></small></td><td>64.0%</td><td><small>33.3% (21)</small></td></tr><tr><td class='nm'>植津 陽香</td><td>16</td><td>2</td><td><b>12.5%</b><small> <span class="bad">▼4.6pt</span></small></td><td>59.3%</td><td><small>17.1% (41)</small></td></tr><tr><td class='nm'>渡邉 巧巳</td><td>15</td><td>6</td><td><b>40.0%</b><small> <span class="good">+3.3pt</span></small></td><td>68.2%</td><td><small>36.7% (30)</small></td></tr><tr><td class='nm'>上原 祐樹<span class="tag t3">実施15未満</span></td><td>14</td><td>1</td><td><b>7.1%</b><small> <span class="bad">▼10.5pt</span></small></td><td>77.8%</td><td><small>17.6% (17)</small></td></tr><tr><td class='nm'>菊池 達郎<span class="tag t3">実施15未満</span></td><td>12</td><td>3</td><td><b>25.0%</b><small> <span class="good">+9.2pt</span></small></td><td>80.0%</td><td><small>15.8% (19)</small></td></tr><tr><td class='nm'>伊藤 はるか<span class="tag t3">実施15未満</span></td><td>12</td><td>5</td><td><b>41.7%</b><small> <span class="bad">▼1.7pt</span></small></td><td>75.0%</td><td><small>43.3% (30)</small></td></tr><tr><td class='nm'>奥野 裕大<span class="tag t3">実施15未満</span></td><td>10</td><td>5</td><td><b>50.0%</b><small> <span class="good">+30.0pt</span></small></td><td>90.9%</td><td><small>20.0% (25)</small></td></tr><tr><td class='nm'>加藤 寿理<span class="tag t3">実施15未満</span></td><td>8</td><td>1</td><td><b>12.5%</b><small> <span class="good">+2.8pt</span></small></td><td>66.7%</td><td><small>9.7% (31)</small></td></tr><tr><td class='nm'>篠原 幸江<span class="tag t3">実施15未満</span></td><td>8</td><td>0</td><td><b>0.0%</b><small> <span class="bad">▼38.5pt</span></small></td><td>80.0%</td><td><small>38.5% (13)</small></td></tr><tr><td class='nm'>鈴木 勇徳<span class="tag t3">実施15未満</span></td><td>7</td><td>0</td><td><b>0.0%</b><small> <span class="good">+0.0pt</span></small></td><td>77.8%</td><td><small>0.0% (6)</small></td></tr><tr><td class='nm'>白土 祐樹<span class="tag t3">実施15未満</span></td><td>5</td><td>1</td><td><b>20.0%</b><small> <span class="bad">▼46.7pt</span></small></td><td>45.5%</td><td><small>66.7% (9)</small></td></tr><tr><td class='nm'>朝倉 由香<span class="tag t3">実施15未満</span></td><td>5</td><td>1</td><td><b>20.0%</b><small> <span class="good">+10.9pt</span></small></td><td>100.0%</td><td><small>9.1% (11)</small></td></tr><tr><td class='nm'>山本 菜摘<span class="tag t3">実施15未満</span></td><td>5</td><td>0</td><td><b>0.0%</b><small> <span class="bad">▼20.0pt</span></small></td><td>71.4%</td><td><small>20.0% (15)</small></td></tr><tr><td class='nm'>瀧田 章子<span class="tag t3">実施15未満</span></td><td>4</td><td>1</td><td><b>25.0%</b><small> <span class="bad">▼21.7pt</span></small></td><td>30.8%</td><td><small>46.7% (15)</small></td></tr><tr><td class='nm'>上村 礼二<span class="tag t3">実施15未満</span></td><td>4</td><td>2</td><td><b>50.0%</b><small> <span class="good">+25.0pt</span></small></td><td>100.0%</td><td><small>25.0% (12)</small></td></tr><tr><td class='nm'>中田 龍弥<span class="tag t3">実施15未満</span></td><td>4</td><td>1</td><td><b>25.0%</b><small> <span class="bad">▼75.0pt</span></small></td><td>80.0%</td><td><small>100.0% (2)</small></td></tr><tr><td class='nm'>野老 美希<span class="tag t3">実施15未満</span></td><td>4</td><td>0</td><td><b>0.0%</b><small> <span class="bad">▼14.3pt</span></small></td><td>66.7%</td><td><small>14.3% (7)</small></td></tr><tr><td class='nm'>尾髙 亮太<span class="tag t3">実施15未満</span></td><td>3</td><td>0</td><td><b>0.0%</b><small> <span class="good">+0.0pt</span></small></td><td>60.0%</td><td><small>0.0% (6)</small></td></tr><tr><td class='nm'>佐藤 龍哉<span class="tag t3">実施15未満</span></td><td>3</td><td>1</td><td><b>33.3%</b><small> <span class="bad">▼16.7pt</span></small></td><td>60.0%</td><td><small>50.0% (2)</small></td></tr><tr><td class='nm'>野口 友里亜<span class="tag t3">実施15未満</span></td><td>2</td><td>1</td><td><b>50.0%</b><small> <span class="good">+35.7pt</span></small></td><td>66.7%</td><td><small>14.3% (7)</small></td></tr><tr><td class='nm'>木川 雅貴<span class="tag t3">実施15未満</span></td><td>2</td><td>1</td><td><b>50.0%</b><small> <span class="good">+50.0pt</span></small></td><td>66.7%</td><td><small>0.0% (1)</small></td></tr><tr><td class='nm'>吉岡 美紀<span class="tag t3">実施15未満</span></td><td>2</td><td>0</td><td><b>0.0%</b><small> <span class="bad">▼28.6pt</span></small></td><td>50.0%</td><td><small>28.6% (7)</small></td></tr><tr><td class='nm'>松林 亜矢子<span class="tag t3">実施15未満</span></td><td>1</td><td>0</td><td><b>0.0%</b><small> <span class="good">+0.0pt</span></small></td><td>50.0%</td><td><small>0.0% (5)</small></td></tr><tr><td class='nm'>山下 雄輔<span class="tag t3">実施15未満</span></td><td>1</td><td>0</td><td><b>0.0%</b><small> <span class="good">+0.0pt</span></small></td><td>100.0%</td><td><small>0.0% (3)</small></td></tr><tr><td class='nm'>手塚 亜図夢<span class="tag t3">実施15未満</span></td><td>1</td><td>0</td><td><b>0.0%</b><small> <span class="bad">▼14.3pt</span></small></td><td>100.0%</td><td><small>14.3% (7)</small></td></tr><tr><td class='nm'>若松 幹根<span class="tag t3">実施15未満</span></td><td>1</td><td>0</td><td><b>0.0%</b><small> <span class="good">+0.0pt</span></small></td><td>50.0%</td><td><small>0.0% (2)</small></td></tr><tr><td class='nm'>尾崎 圭輔<span class="tag t3">実施15未満</span></td><td>1</td><td>0</td><td><b>0.0%</b><small> <span class="good">+0.0pt</span></small></td><td>50.0%</td><td><small>0.0% (1)</small></td></tr><tr><td class='nm'>百生 杏奈<span class="tag t3">実施15未満</span></td><td>1</td><td>0</td><td><b>0.0%</b><small> <span class="bad">▼22.2pt</span></small></td><td>100.0%</td><td><small>22.2% (9)</small></td></tr><tr><td class='nm'>後藤 聖吾<span class="tag t3">実施15未満</span></td><td>1</td><td>0</td><td><b>0.0%</b><small> <span class="bad">▼40.0pt</span></small></td><td>100.0%</td><td><small>40.0% (5)</small></td></tr>
+</table></div>
+<p class="note">実施15件未満は率で評価しません。15日間の数字で「外す」判断はしないでください（2か月連続かつ同席レビューが前提）。</p></details>
+
+<h2>対策（優先度順）</h2>
+<div class="card"><h3><span class="pri">1</span> Digital Creators Academy：予約後のキャンセルを減らす（継続・悪化）</h3>
+<p class="note">キャンセル率（予約数分母）43.1%<span class="b bp">【予定日】</span>で、前回11/11版 40.4% からさらに上がった。前日の連絡が実際に送られているかを、まず現場で確認する。<br>
+<b>効果測定：</b><span class="b ba">【申込日】</span>キャンセル率（申込数分母）を全体平均 24.3% 以下へ。</p></div>
+<div class="card"><h3><span class="pri">2</span> 面談待ちの増加を確認する（新規）</h3>
+<p class="note">確定分の未決着が 14.3%（前月同時点 8.9%）<span class="b ba">【申込日】</span>、実施LT 3.5日（前月同日 2.9日）<span class="b bp">【予定日】</span>。申込の増えたプロジェクトで予約枠が先の日程になっていないかを確かめる。<br>
+<b>効果測定：</b><span class="b ba">【申込日】</span>実施率（申込数分母）の同じ時点での前月比。</p></div>
+<div class="card"><h3><span class="pri">3</span> ふるさとプロテュース実践塾：担当者間の成約率の差を確認（継続）</h3>
+<p class="note">実施114件・成約25件＝21.9%<span class="b br">【結果】</span>。申込の急増に対して商談の質を保てているか、担当者ごとの成約率と失注理由を見比べる。<br>
+<b>効果測定：</b><span class="b br">【結果】</span>成約率 25% 以上。</p></div>
+<div class="card"><h3><span class="pri">4</span> ミニフランチャイズ本部構築プログラム：失注理由の確認（継続）</h3>
+<p class="note">実施27件で成約2件<span class="b br">【結果】</span>。申込は増えているので、面談録画で失注理由を分類する。<br>
+<b>効果測定：</b><span class="b br">【結果】</span>成約率。</p></div>
+<div class="card"><h3><span class="pri">5</span> メンバーケア：橋本 淳志さん・角 忠憲さん・澤畠 英里さん</h3>
+<p class="note">3名とも10月フルより成約率が10pt以上低い。橋本さんは実施件数が最多なので同席レビューを1本。角さんは前回からさらに下がった。<br>
+<b>効果測定：</b><span class="b br">【結果】</span>成約率（月次で評価）。</p></div>
+
+<details><summary>▼ 前回（11/12版・11/11締め）の対策の結果</summary>
+<p class="note">前回からの経過は4日間のため、評価は月次で行います。DCAのキャンセル率（予約数分母）は 40.4%→43.1%、ふるさとの成約率は 20.2%→21.9%、ミニFCは実施18件で成約1件→実施27件で成約2件、橋本さんの成約率は 25.6%→26.9%、角さんは 29.0%→23.8% でした。</p></details>
+
+<details><summary>▼ 読み方・注記（分母／成約率の成熟度／データ品質）</summary>
+<ul class="note">
+<li><b>3つの基準：</b><span class="b br">【結果】</span>結果ベース＝その期間に実際に起きた件数（活動量）。<span class="b bp">【予定日】</span>予定日ベース＝予約した人を予定日で追う（CS側の打ち手の効き目）。<span class="b ba">【申込日】</span>申込日ベース＝申込んだ人を追う（集客からの通しの歩留まり）。<b>基準をまたいだ割り算はしていません。</b></li>
+<li><b>分母（2026-09-27 金子さん指示）：</b>他部署への共有基準にそろえ、<b>実施率（申込数分母）＝実施÷申込、キャンセル率（申込数分母）＝キャンセル÷申込を主指標</b>とし、実施率・キャンセル率（予約数分母）＝実施（キャンセル）÷予約を従として併記。計算式は従来どおり。申込数分母は月途中で低く出るため、前月比は確定分どうし（11/1–11/12 vs 10/1–10/12）で判断します。</li>
+<li><b>同じ時点での前月比（2026-11-01 金子さん決定・標準）：</b>前月の確定分の「最終値」は未決着がほぼ無くなった後の値なので、当期（データ基準日 2026/11/15 時点）とそのまま比べると当期が低く見えます。そこで前月のコホートを<b>当期と同じ経過日数の時点</b>（10/15時点＝2026-10-15までに起きた実施・キャンセルだけ）で見た値 64.6% を並べ、増減（pt）は同じ時点どうしで出しています。元データは1人1行のCSV（20261115取得・26口座）。<span class="b ba">【申込日】</span></li>
+<li><b>未決着の定義（CS Hubと同じ）：</b>未予約＝予定日・実施日・キャンセル日がすべて空／面談待ち＝予定日ありで実施日・キャンセル日なし。予約前のキャンセルは決着済み。「申込−予約」「予約−実施−キャンセル」では出していません。</li>
+<li><b>成約率の成熟度：</b>面談から成約入力までに時間がかかるため、<span class="b bp">【予定日】</span>成約率は途中経過。（maturity.json が無いので着地見込みは出していません）週単位で成約率は比べないでください。</li>
+<li><b>母数ゲート：</b>プロジェクトは申込10件未満（従の予約数分母は予約10件未満）、メンバーは実施15件未満を率で評価していません。</li>
+<li><b>リードタイム：</b>実施LT（申込→実施・予定日ベース）3.5日（前月同日 2.9日）で+0.6日<span class="b bp">【予定日】</span>。長いのはソリューションクリエイター実践ラボ 5.3日（実施13件と少数）・Coオンラインプロモーション 4.4日。</li>
+<li><b>データ品質：</b>2026/11/15に全26口座をLSTEPから再取得。全項目監査で<b>エラー0件・要確認0件・未実施0件＝全項目合格</b>。GAS集計と1人1行のCSV（26口座）の申込・実施・キャンセル・面談待ちは一致しています。</li>
+</ul></details>
+
+<a class="gl" href="./guide.html">📖 レポートの読み方ガイド（チーム共有用・8項目）</a>
+<footer>集計元：スプレッドシート「【CS】CSVインポートシート」→ GAS集計（snapshot / predCohort / applyCohort / dealLags・2026-11-15 生成）。<br>
+主指標＝実施率（申込数分母）＝実施÷申込、キャンセル率（申込数分母）＝キャンセル÷申込<span class="b ba">【申込日】</span>｜従＝実施率・キャンセル率（予約数分母）<span class="b bp">【予定日】</span>｜成約率＝成約÷実施。<br>
+対象 11/1–11/15（15日間・土曜締め）｜前月同日 10/1–10/15｜確定分 11/1–11/12｜参考 10月フル 10/1–10/31｜粒度 プロジェクト単位 15件。</footer>
+</div>
